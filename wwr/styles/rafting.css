@@ -31,10 +31,12 @@ header {
     grid-template-columns: 150px auto;
     align-items: center;
     padding: 10px;
+    background-color: var(--secondary-color);
 }
 
 header img {
     width: 120px;
+    height: auto;
 }
 
 nav {
@@ -79,8 +81,9 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(0, 95, 115, 0.7);
+    background-color: var(--accent1-color);
     color: white;
+    opacity: 0.8;
 }
 
 .hero article {
@@ -88,7 +91,8 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--accent2-color);
+    opacity: 0.9;
 }
 
 .hero article img {
@@ -102,6 +106,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    background-color: var(--secondary-color);
+    padding: 10px;
 }
 
 .socialmedia {
