@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0A9396;
+    --primary-color: #005F73;
     --secondary-color: #94D2BD;
     --accent1-color: #005F73;
     --accent2-color: #E9D8A6;
@@ -51,9 +51,8 @@ nav {
 }
 
 nav a {
+    color: #003D4D;
     text-decoration: none;
-    color: var(--accent1-color);
-    font-weight: bold;
 }
 
 /* HEADINGS */
