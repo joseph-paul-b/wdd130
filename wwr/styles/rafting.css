@@ -17,6 +17,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #ffffff;
 }
 
 header,
@@ -53,6 +54,11 @@ nav {
 nav a {
     color: #003D4D;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--primary-color);
 }
 
 /* HEADINGS */
@@ -61,6 +67,11 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* CONTENT */
@@ -110,32 +121,7 @@ article {
     margin-left: 15px;
 }
 
-/* FOOTER */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: var(--secondary-color);
-}
-
-.socialmedia {
-    display: flex;
-    gap: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
-}
-
-/* HISTORY SECTION */
+/* HISTORY */
 
 .history {
     padding: 20px;
@@ -159,7 +145,7 @@ footer {
     border-radius: 5px;
 }
 
-/* ADVENTURE SECTION */
+/* ADVENTURES */
 
 .adventures {
     padding: 20px;
@@ -190,6 +176,154 @@ footer {
 
 .adventure-gallery figcaption {
     margin-top: 8px;
-    font-size: 0.9rem;
+    font-size: .9rem;
     font-weight: bold;
+}
+
+/* CONTACT PAGE */
+
+.company-info {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.company-info h2 {
+    text-align: center;
+}
+
+.company-info iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.employees {
+    padding: 20px;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.employee-gallery figure {
+    flex: 1;
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 16px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+fieldset label {
+    display: block;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0A9396;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
 }
