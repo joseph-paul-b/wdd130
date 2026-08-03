@@ -312,6 +312,10 @@ footer {
     margin-top: 20px;
     padding: 10px;
     background-color: var(--secondary-color);
+
+    footer p {
+        color: #003D4D;
+    }
 }
 
 .socialmedia {
